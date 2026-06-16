@@ -8,14 +8,16 @@ int main() {
     return 0;
 }
 
-/* === 2D Array ===
+/*
+ === 2D Array ===
 #include<bits/stdc++.h>
 using namespace std;
 
 int main() {
     int arr[3][5];
-    arr[3][5] = 1234;
-    cout << arr[1][4]; // this gives any random garbage value aside from arr[3][5]
+    arr[2][4] = 1234;
+    cout << arr[2][5]; // this gives any random garbage value aside from arr[3][5]
     return 0;
 }
 */
+
