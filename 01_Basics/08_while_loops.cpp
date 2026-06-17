@@ -1,6 +1,7 @@
-/* #include<bits/stdc++.h>
+ #include<bits/stdc++.h>
 using namespace std;
 
+/*
 int main() {
     int i;
     cin >> i;
@@ -11,9 +12,6 @@ int main() {
     }
     return 0;
 } */
-
-#include<bits/stdc++.h>
-using namespace std;
 
 int main() {
     int i = 3;

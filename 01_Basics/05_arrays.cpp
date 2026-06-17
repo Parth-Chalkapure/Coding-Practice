@@ -10,9 +10,6 @@ int main() {
 
 /*
  === 2D Array ===
-#include<bits/stdc++.h>
-using namespace std;
-
 int main() {
     int arr[3][5];
     arr[2][4] = 1234;
