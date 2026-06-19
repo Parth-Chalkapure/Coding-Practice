@@ -1,4 +1,5 @@
-
+/* Q. Given an array arr of n elements. The task is to reverse the given array. The reversal of array should be inplace.
+ */
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -14,23 +15,26 @@ public:
 };
 
 int main() {
-    Solution solver;
-    
-    // Sample array to test your logic locally
-    vector<int> my_array = {1, 2, 3, 4, 5};
-
-    // Calling your function
-    solver.reverse(my_array);
-
-    // Printing the result to verify it worked
-    cout << "[";
-    for(size_t i = 0; i < my_array.size(); i++) {
-        cout << my_array[i];
-        if(i < my_array.size() - 1) {
-            cout << ", ";
+    int n;
+    if (cin >> n) { // Read the size of the array first
+        vector<int> my_array(n);
+        for(int i = 0; i < n; i++) {
+            cin >> my_array[i]; // Read each element into the vector
         }
+
+        Solution solver;
+        solver.reverse(my_array);
+
+        // Print the result to output.txt
+        cout << "[";
+        for(size_t i = 0; i < my_array.size(); i++) {
+            cout << my_array[i];
+            if(i < my_array.size() - 1) {
+                cout << ", ";
+            }
+        }
+        cout << "]" << endl;
     }
-    cout << "]" << endl;
 
     return 0;
 }

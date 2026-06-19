@@ -18,14 +18,14 @@ public:
 };
 
 int main() {
-    Solution solver;
-    
-    // Testing the function with a sample value for 'd'
-    int test_d = 5;
-    int result = solver.whileLoop(test_d);
-    
-    // Printing the output to your terminal
-    cout << "The result for d = " << test_d << " is: " << result << endl;
+    int test_d;
+    if (cin >> test_d) { // Read 'd' from input.txt
+        Solution solver;
+        int result = solver.whileLoop(test_d);
+        
+        // Print the result to output.txt
+        cout << result << endl;
+    }
     
     return 0;
 }
