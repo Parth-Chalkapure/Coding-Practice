@@ -1,5 +1,10 @@
-*.exe
+main.cpp
+main
 input.txt
 output.txt
 .vscode/
-main.cpp
+*
+!*/
+!*.cpp
+!*.h
+!.gitignore
