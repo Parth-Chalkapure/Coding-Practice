@@ -1,22 +1,31 @@
-#include<bits/stdc++.h>
+#include <bits/stdc++.h>
 using namespace std;
 
-void understandPairs() {
-    // pair<int, int> p = {2, 3};
-    // cout << p.second << " " << p.first;
+void testBasicPairs() {
+    pair<int, int> p = {2, 3};
+    cout << p.second << " " << p.first << endl;
+}
 
-    // pair<int, pair<int, int>> p = {2, {4, 5}};
-    // cout << p.second.first << " " << p.first << " " << p.second.second;
+void testNestedPairs() {
+    pair<int, pair<int, int>> p = {2, {4, 5}};
+    cout << p.second.first << " " << p.first << " " << p.second.second << endl;
+}
 
-    // pair<int, int> arr[] = {{1, 2}, {3, 4}, {5, 6}};
-    // cout << arr[2].second; 
+void testPairArray() {
+    pair<int, int> arr[] = {{1, 2}, {3, 4}, {5, 6}};
+    cout << arr[2].second << endl;
+}
 
+void testStringPairs() {
     pair<string, string> p = {"Ram", "Sham"};
-    cout << p.first;
+    cout << p.first << endl;
 }
 
 int main() {
-    understandPairs();
+     testBasicPairs();
+    // testNestedPairs();
+    // testPairArray();
+    // testStringPairs();
+
     return 0;
 }
-
